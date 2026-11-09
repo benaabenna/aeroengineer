@@ -17,10 +17,10 @@ HTML = """
 {% if results %}
 <h2>Results</h2>
 <ul>
-    <li>Temperature (K): {{ results.temperature:.2f }}</li>
-    <li>Pressure (Pa): {{ results.pressure:.1f }}</li>
-    <li>Density (kg/m³): {{ results.density:.4f }}</li>
-    <li>Mach number: {{ results.mach:.3f }}</li>
+    <li>Temperature (K): {{ '%.2f' % results.temperature }}</li>
+    <li>Pressure (Pa): {{ '%.1f' % results.pressure }}</li>
+    <li>Density (kg/m³): {{ '%.4f' % results.density }}</li>
+    <li>Mach number: {{ '%.3f' % results.mach }}</li>
 </ul>
 {% endif %}
 """
@@ -48,4 +48,4 @@ def index():
     return render_template_string(HTML, altitude=altitude, velocity=velocity, results=results)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)   
