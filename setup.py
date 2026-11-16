@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name="aeroengineer",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Benard M Njanja",
+    author_email="mwashbenarrrd@gmail.com",
     description="A clean and practical Python package for aeronautical engineering calculations",
     packages=find_packages(include=["aeroengineer", "aeroengineer.*"]),
     install_requires=["numpy"],
